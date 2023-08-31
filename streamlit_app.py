@@ -1,5 +1,6 @@
-# Python program to find the largest
-# number among the three numbers
+import streamlit as st
+
+st.write('Hello world!')
 
 def maximum(a, b, c):
 
@@ -18,5 +19,5 @@ def maximum(a, b, c):
 a = 10
 b = 14
 c = 12
-print(maximum(a, b, c))
+st.print(maximum(a, b, c))
 
