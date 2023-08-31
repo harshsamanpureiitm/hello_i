@@ -1,14 +1,22 @@
-import streamlit as st
+# Python program to find the largest
+# number among the three numbers
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-num3 = float(input("Enter third number: "))
+def maximum(a, b, c):
 
-if (num1 >= num2) and (num1 >= num3):
-   largest = num1
-elif (num2 >= num1) and (num2 >= num3):
-   largest = num2
-else:
-   largest = num3
+	if (a >= b) and (a >= c):
+		largest = a
 
-print("The largest number is", largest)
+	elif (b >= a) and (b >= c):
+		largest = b
+	else:
+		largest = c
+		
+	return largest
+
+
+# Driven code
+a = 10
+b = 14
+c = 12
+print(maximum(a, b, c))
+
